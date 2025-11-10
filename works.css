@@ -27,6 +27,7 @@ section.project:not(:last-child) {
   position: relative;
   background: transparent;
   overflow: hidden;
+  align-items: center;
 }
 
 .main-project::before {
@@ -69,16 +70,42 @@ section.project:not(:last-child) {
   background-color: rgba(211, 211, 211, 0.432);
 }
 
+.project:nth-of-type(4) .main-project::before {
+  background: url("https://img.youtube.com/vi/p9L4B0prSfo/hqdefault.jpg")
+    center/cover no-repeat;
+}
+
+.project:nth-of-type(4) .buttons .link-youtube a {
+  background-color: rgb(103, 130, 254);
+}
+
+.project:nth-of-type(4) .buttons .link-youtube a:hover {
+  background-color: rgba(103, 131, 254, 0.4);
+}
+
+.project:nth-of-type(5) .main-project::before {
+  background: url("https://img.youtube.com/vi/rbzZjT0Vg98/hqdefault.jpg")
+    center/cover no-repeat;
+}
+
+.project:nth-of-type(5) .buttons .link-youtube a {
+  background-color: rgb(136, 254, 103);
+}
+
+.project:nth-of-type(5) .buttons .link-youtube a:hover {
+  background-color: rgba(136, 254, 103, 0.372);
+}
+
 .main-project > * {
   position: relative;
   z-index: 1; /* đảm bảo nội dung nằm trên nền */
 }
 
-.project-img {
+.main-project .project-img {
   padding: 10px;
 }
 
-.project-img .img-container iframe {
+.main-project .project-img .img-container iframe {
   border-radius: 20px;
 }
 
@@ -125,6 +152,26 @@ section.project:not(:last-child) {
   color: #dadada;
 }
 
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+  color: #dadada;
+  margin: 0;
+  padding: 0px 0px 50px 0px;
+  text-align: center;
+}
+
+.six-style .description p {
+  margin-top: 0;
+}
+
+.six-style .description ul {
+  padding-bottom: 40px;
+  margin-bottom: 0;
+}
+
 /* Tablet */
 @media (max-width: 768px) {
   .cover .inner {
@@ -137,15 +184,18 @@ section.project:not(:last-child) {
   }
 
   .main-project {
+    display: flex;
     flex-direction: column; /* đổi thành dọc */
     padding: 15px;
+    align-items: center;
   }
 
-  .project-img {
+  .main-project .project-img {
     padding: 0;
+    margin-right: 0;
   }
 
-  .project-img .img-container iframe {
+  .main-project .project-img .img-container iframe {
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
