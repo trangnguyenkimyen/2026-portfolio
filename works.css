@@ -71,7 +71,7 @@ section.project:not(:last-child) {
 }
 
 .project:nth-of-type(4) .main-project::before {
-  background: url("https://img.youtube.com/vi/p9L4B0prSfo/hqdefault.jpg")
+  background: url("https://img.youtube.com/vi/mNMNMSxfvNo/hqdefault.jpg")
     center/cover no-repeat;
 }
 
