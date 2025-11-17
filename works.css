@@ -57,7 +57,7 @@ section.project:not(:last-child) {
   background-color: rgba(176, 196, 222, 0.502);
 }
 
-.project:nth-of-type(3) .main-project::before {
+/* .project:nth-of-type(3) .main-project::before {
   background: url("https://img.youtube.com/vi/kLrzytiT3FI/hqdefault.jpg")
     center/cover no-repeat;
 }
@@ -68,31 +68,31 @@ section.project:not(:last-child) {
 
 .project:nth-of-type(3) .buttons .link-youtube a:hover {
   background-color: rgba(211, 211, 211, 0.432);
-}
+} */
 
-.project:nth-of-type(4) .main-project::before {
+.project:nth-of-type(3) .main-project::before {
   background: url("https://img.youtube.com/vi/mNMNMSxfvNo/hqdefault.jpg")
     center/cover no-repeat;
 }
 
-.project:nth-of-type(4) .buttons .link-youtube a {
+.project:nth-of-type(3) .buttons .link-youtube a {
   background-color: rgb(103, 130, 254);
 }
 
-.project:nth-of-type(4) .buttons .link-youtube a:hover {
+.project:nth-of-type(3) .buttons .link-youtube a:hover {
   background-color: rgba(103, 131, 254, 0.4);
 }
 
-.project:nth-of-type(5) .main-project::before {
+.project:nth-of-type(4) .main-project::before {
   background: url("https://img.youtube.com/vi/rbzZjT0Vg98/hqdefault.jpg")
     center/cover no-repeat;
 }
 
-.project:nth-of-type(5) .buttons .link-youtube a {
+.project:nth-of-type(4) .buttons .link-youtube a {
   background-color: rgb(136, 254, 103);
 }
 
-.project:nth-of-type(5) .buttons .link-youtube a:hover {
+.project:nth-of-type(4) .buttons .link-youtube a:hover {
   background-color: rgba(136, 254, 103, 0.372);
 }
 
