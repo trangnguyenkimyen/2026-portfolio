@@ -4,17 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TrangNguyenKimYen | About</title>
-    <!-- HAMBURGER -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"
     />
-    <!-- FANCY APPS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,18 +27,17 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="about.css" />
   </head>
   <body>
-    <!-- Nút hamburger -->
     <button class="hamburger hamburger--spin" type="button">
       <span class="hamburger-box">
         <span class="hamburger-inner"></span>
       </span>
     </button>
 
-    <!-- Sidebar menu -->
     <nav class="sidebar">
       <ul>
         <li><a href="./index.html">Home</a></li>
@@ -61,6 +62,7 @@
     <div class="cover">
       <div class="inner">
         <h1>ABOUT</h1>
+
         <section class="profile">
           <div class="main-section-title">
             <h2>Profile</h2>
@@ -107,12 +109,11 @@
           <div class="main-section-title">
             <h2 class="no-margin">Experience</h2>
           </div>
-          <!-- CHIEU MEDIA -->
           <div class="job">
             <div class="container">
               <h3>
                 ・AI Content Creator – CHIEU Media
-                <span>(03/2025 – 09/2025)</span>
+                <span>(03/2025 – 10/2025)</span>
               </h3>
               <div class="step">
                 <p>→ Nhận kịch bản và phân tích.</p>
@@ -122,7 +123,6 @@
               </div>
               <div class="step">
                 <p>→ Tạo prompt từ ChatGPT.</p>
-                <!-- <img src="img/prompt.png" alt="Prompt" /> -->
                 <div class="image-stack">
                   <img src="img/prompt1.png" alt="Ảnh 1" class="img-back" />
                   <img src="img/prompt2.png" alt="Ảnh 2" class="img-front" />
@@ -131,70 +131,30 @@
               <div class="step">
                 <p>→ Tạo ảnh và video minh họa.</p>
                 <div class="video-grid">
-                  <!-- Item 1 -->
                   <div class="video-item">
                     <img src="img/thumb1.jpg" alt="Thumbnail 1" class="thumb" />
-                    <video
-                      src="vid/1.mp4"
-                      autoplay
-                      muted
-                      playsinline
-                      loop
-                    ></video>
+                    <video src="vid/1.mp4" muted playsinline loop></video>
                   </div>
-
-                  <!-- Item 2 -->
                   <div class="video-item">
                     <img src="img/thumb2.jpg" alt="Thumbnail 2" class="thumb" />
-                    <video
-                      src="vid/2.mp4"
-                      autoplay
-                      muted
-                      playsinline
-                      loop
-                    ></video>
+                    <video src="vid/2.mp4" muted playsinline loop></video>
                   </div>
-
-                  <!-- Item 3 -->
                   <div class="video-item">
                     <img src="img/thumb3.jpg" alt="Thumbnail 3" class="thumb" />
-                    <video
-                      src="vid/4.mp4"
-                      autoplay
-                      muted
-                      playsinline
-                      loop
-                    ></video>
+                    <video src="vid/4.mp4" muted playsinline loop></video>
                   </div>
-
-                  <!-- Item 4 -->
                   <div class="video-item">
                     <img src="img/thumb4.jpg" alt="Thumbnail 4" class="thumb" />
-                    <video
-                      src="vid/3.mp4"
-                      autoplay
-                      muted
-                      playsinline
-                      loop
-                    ></video>
+                    <video src="vid/3.mp4" muted playsinline loop></video>
                   </div>
-
-                  <!-- Item 5 -->
                   <div class="video-item">
                     <img src="img/thumb5.jpg" alt="Thumbnail 5" class="thumb" />
-                    <video
-                      src="vid/5.mp4"
-                      autoplay
-                      muted
-                      playsinline
-                      loop
-                    ></video>
+                    <video src="vid/5.mp4" muted playsinline loop></video>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- YING MART -->
           <div class="job">
             <div class="container">
               <h3>
@@ -235,31 +195,24 @@
             <h2 class="no-margin">Skills</h2>
           </div>
           <div class="skills-content">
-            <!-- Danh sách kỹ năng -->
             <ul class="skills-list">
               <li>
-                <strong>Ứng dụng các công cụ AI:</strong> ChatGPT, Leonardo.Ai,
-                Midjourney, Hailuo AI, Google AI Studio, Kling.
+                <strong>Ứng dụng các công cụ AI:</strong> ChatGPT, Nano Banana,
+                Leonardo.Ai, Midjourney, Hailuo AI, Google AI Studio, Kling.
               </li>
               <li>
                 <strong>Chỉnh sửa & Thiết kế hình ảnh:</strong> Canva, Figma.
               </li>
               <li><strong>Edit video:</strong> CapCut.</li>
+              <li><strong>Lập trình:</strong> HTML, CSS, JavaScript.</li>
               <li>
                 <strong>Quản lý thời gian:</strong> Hoàn thành công việc đúng
                 deadline với chất lượng cao.
               </li>
             </ul>
 
-            <!-- Icon minh họa -->
-            <div class="skills-circle">
-              <div class="circle">
-                <img src="img/icon-leonardo.webp" alt="Leonardo AI" />
-                <img src="img/icon-ggstudio.png" alt="Midjourney" />
-                <img src="img/icon-hailuo.png" alt="Hailuo AI" />
-                <img src="img/icon-kling.png" alt="Kling" />
-                <img src="img/icon-chatgpt.png" alt="ChatGPT" />
-              </div>
+            <div class="skills-pool-wrapper">
+              <div id="physics-pool"></div>
             </div>
           </div>
         </section>
@@ -284,7 +237,6 @@
       </div>
     </div>
 
-    <!-- Thêm GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
@@ -293,18 +245,27 @@
       const sidebar = document.querySelector(".sidebar");
 
       hamburger.addEventListener("click", function () {
-        this.classList.toggle("is-active"); // animation nút
-        sidebar.classList.toggle("active"); // hiện/ẩn menu
+        this.classList.toggle("is-active");
+        sidebar.classList.toggle("active");
+      });
+
+      // Video hover effect
+      const videoItems = document.querySelectorAll(".video-item");
+      videoItems.forEach((item) => {
+        const video = item.querySelector("video");
+        item.addEventListener("mouseenter", () => {
+          video.play();
+        });
+        item.addEventListener("mouseleave", () => {
+          video.pause();
+          video.currentTime = 0;
+        });
       });
     </script>
 
     <script>
-      // Kích hoạt plugin
       gsap.registerPlugin(ScrollTrigger);
-
-      // Danh sách section cần fade in khi scroll
       const sections = [".profile", ".experience", ".skills", ".certificates"];
-
       sections.forEach((sec) => {
         gsap.from(sec, {
           opacity: 0,
@@ -312,8 +273,197 @@
           ease: "power2.out",
           scrollTrigger: {
             trigger: sec,
-            start: "top 80%", // chạy khi section chạm 80% viewport
+            start: "top 80%",
           },
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // 1. Khai báo module
+        const Engine = Matter.Engine,
+          Render = Matter.Render,
+          Runner = Matter.Runner,
+          Bodies = Matter.Bodies,
+          Composite = Matter.Composite,
+          Mouse = Matter.Mouse,
+          MouseConstraint = Matter.MouseConstraint;
+
+        // 2. Setup
+        const poolContainer = document.getElementById("physics-pool");
+        const width = poolContainer.clientWidth;
+        const height = poolContainer.clientHeight; // 300px
+
+        const engine = Engine.create();
+        const world = engine.world;
+
+        const render = Render.create({
+          element: poolContainer,
+          engine: engine,
+          options: {
+            width: width,
+            height: height,
+            background: "transparent",
+            wireframes: false,
+          },
+        });
+
+        // ============================================================
+        // 3. TẠO KHUNG (SỬA LỖI: TƯỜNG CỰC CAO)
+        // ============================================================
+
+        const wallThickness = 60;
+        const desiredTotalHeight = 1500; // Tăng chiều cao ảo lên 1500px cho thoải mái
+        const extraHeight = desiredTotalHeight - height; // Phần dư bên trên
+        const ceilingY = -extraHeight;
+
+        // 3.1. Sàn nhà
+        const ground = Bodies.rectangle(
+          width / 2,
+          height + wallThickness / 2 - 5,
+          width,
+          wallThickness,
+          { isStatic: true, render: { visible: false } }
+        );
+
+        // 3.2. Trần nhà (Chặn không cho bay mất)
+        const ceiling = Bodies.rectangle(
+          width / 2,
+          ceilingY - wallThickness,
+          width * 2, // Làm trần rộng ra gấp đôi cho chắc
+          wallThickness,
+          { isStatic: true, render: { visible: false } }
+        );
+
+        // 3.3. Tường trái & phải (QUAN TRỌNG: Cao gấp 10 lần hồ để bao trọn)
+        const wallHeight = 5000; // Cho cao 5000px luôn cho chắc chắn không lọt ra ngoài
+
+        const leftWall = Bodies.rectangle(
+          0 - wallThickness / 2,
+          0, // Tâm tường nằm giữa, nhưng vì nó cao 5000px nên sẽ phủ kín
+          wallThickness,
+          wallHeight,
+          { isStatic: true, render: { visible: false } }
+        );
+
+        const rightWall = Bodies.rectangle(
+          width + wallThickness / 2,
+          0,
+          wallThickness,
+          wallHeight,
+          { isStatic: true, render: { visible: false } }
+        );
+
+        Composite.add(world, [ground, leftWall, rightWall, ceiling]);
+
+        // 4. Mouse Control
+        const mouse = Mouse.create(render.canvas);
+        const mouseConstraint = MouseConstraint.create(engine, {
+          mouse: mouse,
+          constraint: {
+            stiffness: 0.2,
+            render: { visible: false },
+          },
+        });
+        Composite.add(world, mouseConstraint);
+
+        mouse.element.removeEventListener("mousewheel", mouse.mousewheel);
+        mouse.element.removeEventListener("DOMMouseScroll", mouse.mousewheel);
+
+        // 5. Run
+        Render.run(render);
+        const runner = Runner.create();
+        Runner.run(runner, engine);
+
+        // 6. LOGIC RƠI (SỬA LỖI: Rơi lần lượt từng cái)
+        let hasRained = false;
+
+        ScrollTrigger.create({
+          trigger: ".skills",
+          start: "top 60%",
+          onEnter: function () {
+            if (!hasRained) {
+              dropIcons();
+              hasRained = true;
+            }
+          },
+        });
+
+        function dropIcons() {
+          const iconImages = [
+            "img/icon-leonardo.png",
+            "img/icon-ggstudio.png",
+            "img/icon-hailuo.png",
+            "img/icon-kling.png",
+            "img/icon-chatgpt.png",
+            "img/icon-canva.png",
+            "img/icon-capcut.png",
+            "img/icon-css.png",
+            "img/icon-figma.png",
+            "img/icon-html.png",
+            "img/icon-js.png",
+            "img/icon-midjourney.png",
+            "img/icon-grok.png",
+            // Nếu thiếu ảnh nào nó sẽ lỗi, bạn nhớ kiểm tra file
+          ];
+
+          // Thay vì map, ta dùng forEach để tạo delay cho từng cái
+          iconImages.forEach((imgSrc, index) => {
+            setTimeout(() => {
+              const size = 35;
+              // Thả ở vị trí an toàn:
+              // X: Random trong hồ
+              // Y: Ngay mép trên màn hình một chút (để người dùng thấy nó rơi xuống)
+              const x = Math.random() * (width - 100) + 50;
+              const y = -100; // Luôn thả từ độ cao -100 (trong tầm kiểm soát của tường)
+
+              const icon = Bodies.circle(x, y, size, {
+                restitution: 0.6,
+                friction: 0.5,
+                render: {
+                  sprite: {
+                    texture: imgSrc,
+                    xScale: 0.35,
+                    yScale: 0.35,
+                  },
+                },
+              });
+
+              Composite.add(world, icon);
+            }, index * 200); // Cứ 200ms (0.2 giây) thì thả 1 cái.
+          });
+        }
+
+        // 7. Resize Handler
+        window.addEventListener("resize", function () {
+          const newWidth = poolContainer.clientWidth;
+          const newHeight = poolContainer.clientHeight;
+          render.canvas.width = newWidth;
+          render.canvas.height = newHeight;
+
+          Matter.Body.setPosition(ground, {
+            x: newWidth / 2,
+            y: newHeight + wallThickness / 2 - 5,
+          });
+
+          const rExtraHeight = desiredTotalHeight - newHeight;
+          const rCeilingY = -rExtraHeight;
+
+          Matter.Body.setPosition(ceiling, {
+            x: newWidth / 2,
+            y: rCeilingY - wallThickness,
+          });
+
+          Matter.Body.setPosition(rightWall, {
+            x: newWidth + wallThickness / 2,
+            y: 0,
+          });
+
+          Matter.Body.setPosition(leftWall, {
+            x: 0 - wallThickness / 2,
+            y: 0,
+          });
         });
       });
     </script>

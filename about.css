@@ -1,3 +1,6 @@
+/* =========================================
+   GLOBAL & COMMON STYLES
+   ========================================= */
 .no-margin {
   margin: 0px;
 }
@@ -28,10 +31,16 @@
   color: #dadada;
 }
 
+/* =========================================
+   PROFILE SECTION
+   ========================================= */
 .profile-details .content {
   font-family: "Space Grotesk", Sans-serif;
 }
 
+/* =========================================
+   EXPERIENCE SECTION
+   ========================================= */
 .experience {
   padding-top: 100px;
 }
@@ -39,8 +48,20 @@
 .experience .job {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
+}
+
+/* Tùy chỉnh riêng cho Job thứ 3 (nếu có) */
+.job:nth-child(3) {
+  padding-top: 40px;
+}
+
+.job:nth-child(3) .container h3 {
+  padding-bottom: 15px;
+}
+
+.job:nth-child(3) p {
+  margin: 0;
 }
 
 .experience .job .container h3 {
@@ -81,9 +102,10 @@
   object-fit: cover;
 }
 
+/* --- Image Stack (Hiệu ứng xếp chồng ảnh) --- */
 .image-stack {
   position: relative;
-  width: 300px; /* chỉnh theo kích thước mong muốn */
+  width: 300px;
   aspect-ratio: 1;
   margin: 40px auto;
 }
@@ -98,7 +120,6 @@
   position: absolute;
 }
 
-/* ảnh phía sau */
 .image-stack .img-back {
   top: 0;
   left: 0;
@@ -106,7 +127,6 @@
   z-index: 1;
 }
 
-/* ảnh phía trước */
 .image-stack .img-front {
   top: 0;
   left: 0;
@@ -114,6 +134,7 @@
   z-index: 2;
 }
 
+/* --- Video Grid --- */
 .video-section {
   padding: 40px 20px;
   background: #111;
@@ -129,7 +150,7 @@
 
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 cột */
+  grid-template-columns: repeat(5, 1fr);
   gap: 20px;
   max-width: 1400px;
   margin: 0 auto;
@@ -141,10 +162,8 @@
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-  /* cursor: pointer; */
 }
 
-/* Ảnh thumbnail */
 .video-item .thumb {
   width: 100%;
   height: 100%;
@@ -154,7 +173,6 @@
   transition: filter 0.4s ease;
 }
 
-/* Video */
 .video-item video {
   position: absolute;
   top: 0;
@@ -162,37 +180,25 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0; /* ẩn video */
+  opacity: 0;
   filter: grayscale(100%);
   transition: opacity 0.4s ease, filter 0.4s ease;
 }
 
-/* Hover effect */
 .video-item:hover .thumb {
-  opacity: 0; /* ẩn ảnh */
+  opacity: 0;
 }
 
 .video-item:hover video {
-  opacity: 1; /* hiện video */
-  filter: grayscale(0%); /* chuyển sang màu */
+  opacity: 1;
+  filter: grayscale(0%);
   box-shadow: 0 8px 30px rgba(255, 255, 255, 0.4);
 }
 
-.job:nth-child(3) {
-  padding-top: 40px;
-}
-
-.job:nth-child(3) .container h3 {
-  padding-bottom: 15px;
-}
-
-.job:nth-child(3) p {
-  margin: 0;
-}
-
+/* --- Book Stack --- */
 .book-stack {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 5 cột */
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   max-width: 700px;
   margin: 0 auto;
@@ -215,82 +221,68 @@
   object-fit: cover;
 }
 
+/* =========================================
+   SKILLS SECTION (NEW MATTER.JS LAYOUT)
+   ========================================= */
 .skills .main-section-title {
   padding-top: 160px;
 }
 
 .skills-content {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 60px;
-  max-width: 700px;
+  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: space-between; /* Đẩy chữ và hồ ra 2 bên */
+  gap: 40px;
+  max-width: 900px; /* Tăng chiều rộng để chứa đủ hồ */
   margin: 0 auto;
 }
 
-/* Danh sách kỹ năng */
 .skills-list {
+  flex: 1; /* Chữ chiếm không gian còn lại */
   list-style-type: disc;
   padding-left: 20px;
   font-family: "Space Grotesk", Sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
+  line-height: 1.8;
   color: #dadada;
 }
 
-/* Vùng chứa vòng tròn */
-.skills-circle {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  margin: 0 auto;
-  border-radius: 50%;
-  overflow: visible;
+/* Container bao quanh hồ */
+.skills-pool-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
 }
 
-.circle {
+/* Cái hồ chứa Canvas */
+#physics-pool {
   width: 100%;
-  height: 100%;
+  max-width: 400px;
+  height: 300px;
   position: relative;
+
+  /* Vẽ viền hồ */
+  border-left: 4px solid rgba(218, 218, 218, 0.5);
+  border-right: 4px solid rgba(218, 218, 218, 0.5);
+  border-bottom: 4px solid rgba(218, 218, 218, 0.5);
+  border-radius: 0 0 40px 40px;
+
+  background: rgba(255, 255, 255, 0.02);
+  overflow: hidden;
 }
 
-.circle img {
-  width: 70px;
-  height: 70px;
-  object-fit: contain;
-  border-radius: 12px;
-  padding: 10px;
-  position: absolute;
+#physics-pool canvas {
+  display: block;
 }
 
-/* Đặt icon theo góc quay vòng tròn */
-.circle img:nth-child(1) {
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.circle img:nth-child(2) {
-  top: 30%;
-  right: -10%;
-  transform: translateY(-50%);
-}
-.circle img:nth-child(3) {
-  bottom: 30%;
-  right: -10%;
-  transform: translateX(-50%);
-}
-.circle img:nth-child(4) {
-  top: 30%;
-  left: -10%;
-  transform: translateY(-50%);
-}
-.circle img:nth-child(5) {
-  bottom: 30%;
-  left: 10%;
-}
-
+/* =========================================
+   CERTIFICATES SECTION
+   ========================================= */
 .certificates .main-section-title {
-  padding-top: 80px;
+  padding-top: 160px;
 }
 
 .certi-content {
@@ -300,6 +292,7 @@
 }
 
 .certi-list {
+  margin: 0;
   list-style-type: disc;
   padding-left: 20px;
   font-family: "Space Grotesk", Sans-serif;
@@ -308,37 +301,39 @@
   color: #dadada;
 }
 
-.certi-list {
-  margin: 0;
-}
+/* =========================================
+   RESPONSIVE / MEDIA QUERIES
+   ========================================= */
 
-/* Tablet */
+/* Tablet & Small Laptops */
 @media (max-width: 1024px) {
   .cover .inner h1 {
     font-size: 32px;
   }
 
   .video-grid {
-    grid-template-columns: repeat(3, 1fr); /* từ 5 cột còn 3 */
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .book-stack {
-    grid-template-columns: repeat(2, 1fr); /* từ 3 còn 2 */
+    grid-template-columns: repeat(2, 1fr);
   }
 
+  /* Skills: Xếp dọc trên tablet */
   .skills-content {
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    padding: 0 20px;
   }
 
-  .skills-circle {
-    display: none;
+  .skills-pool-wrapper {
+    width: 100%;
   }
 
-  .circle img {
-    width: 60px;
-    height: 60px;
+  #physics-pool {
+    height: 350px;
+    max-width: 350px;
   }
 
   .image-stack {
@@ -378,21 +373,24 @@
 
   .experience .job .container p {
     font-size: 14px;
-    /* text-align: center; */
   }
 
   .image-stack {
-    /* width: 220px; */
     margin: 20px auto;
+    width: 220px;
+  }
+
+  .image-stack .img-back {
+    transform: translate(-80px, 0);
   }
 
   .video-grid {
-    grid-template-columns: repeat(2, 1fr); /* còn 2 cột */
+    grid-template-columns: repeat(2, 1fr);
     gap: 12px;
   }
 
   .book-stack {
-    grid-template-columns: 1fr; /* hiển thị 1 cột */
+    grid-template-columns: 1fr;
     gap: 12px;
   }
 
@@ -400,14 +398,12 @@
     padding-top: 80px;
   }
 
-  .skills-circle {
-    width: 200px;
-    height: 200px;
-  }
-
-  .circle img {
-    width: 50px;
-    height: 50px;
+  /* Điều chỉnh hồ nhỏ hơn cho điện thoại */
+  #physics-pool {
+    height: 300px;
+    max-width: 300px;
+    border-width: 3px;
+    border-radius: 0 0 30px 30px;
   }
 
   .certificates .main-section-title {
@@ -418,17 +414,9 @@
     font-size: 14px;
     padding-left: 15px;
   }
-
-  .skills-circle {
-    display: none;
-  }
-
-  .image-stack .img-back {
-    transform: translate(-80px, 0);
-  }
 }
 
-/* Mobile nhỏ (điện thoại <480px) */
+/* Mobile nhỏ (< 480px) */
 @media (max-width: 480px) {
   .cover .inner h1 {
     font-size: 22px;
@@ -440,10 +428,12 @@
   }
 
   .video-grid {
-    grid-template-columns: 1fr; /* chỉ 1 cột */
+    grid-template-columns: 1fr;
   }
 
-  .skills-circle {
-    display: none;
+  /* Hồ nhỏ nhất có thể */
+  #physics-pool {
+    max-width: 280px;
+    height: 280px;
   }
 }
