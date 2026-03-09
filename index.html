@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -29,6 +29,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="lang-toggle">
+      <span class="lang-btn active" data-lang="vi">VI</span>
+      <span>|</span>
+      <span class="lang-btn" data-lang="en">EN</span>
+    </div>
+
     <!-- Nút hamburger -->
     <button class="hamburger hamburger--spin" type="button">
       <span class="hamburger-box">
@@ -50,6 +56,11 @@
             <br />
             (+84) 85 293 3920
           </p>
+        </li>
+        <li class="mobile-lang-toggle">
+          <span class="lang-btn active" data-lang="vi">VI</span>
+          <span>|</span>
+          <span class="lang-btn" data-lang="en">EN</span>
         </li>
       </ul>
 
@@ -102,15 +113,17 @@
                 </a>
               </div>
               <div class="text-editor">
-                <p>07/2025 | Thời lượng: 9 phút | Lượt xem: 429k</p>
+                <p data-i18n="home_project_meta">
+                  07/2025 | Thời lượng: 9 phút | Lượt xem: 429k
+                </p>
               </div>
             </div>
             <div class="project-details">
               <div class="title">
-                <h4>[Tóm tắt]</h4>
+                <h4 data-i18n="home_project_summary_title">[Tóm tắt]</h4>
               </div>
               <div class="content">
-                <p>
+                <p data-i18n="home_project_summary_desc">
                   “Mèo con chăm bệnh mèo mẹ” là video thiếu nhi kể về tình cảm
                   giữa mèo con và mèo mẹ vàng. Hình ảnh được thể hiện theo phong
                   cách realistic với chút nhân hóa, video mang đến thông điệp
@@ -119,14 +132,16 @@
               </div>
 
               <div class="title">
-                <h4>[Vai trò]</h4>
+                <h4 data-i18n="home_project_role_title">[Vai trò]</h4>
               </div>
               <div class="content">
-                <p>Tạo ảnh và video minh họa.</p>
+                <p data-i18n="home_project_role_desc">
+                  Tạo ảnh và video minh họa.
+                </p>
               </div>
 
               <div class="title">
-                <h4>[Công cụ]</h4>
+                <h4 data-i18n="home_project_tools_title">[Công cụ]</h4>
               </div>
               <div class="content">
                 <p>ChatGPT, Leonardo.Ai, Whisk, Hailuo.</p>
@@ -167,22 +182,24 @@
             </div>
             <div class="profile-details">
               <div class="title">
-                <h4>Trang Nguyễn Kim Yến</h4>
+                <h4 data-i18n="home_profile_name">Trang Nguyễn Kim Yến</h4>
               </div>
               <div class="content" style="padding-bottom: 0px">
                 <div class="container" style="padding-bottom: 5px">
-                  <p>Sống tại Tp. Hồ Chí Minh, 24 tuổi.</p>
+                  <p data-i18n="home_profile_loc">
+                    Sống tại Tp. Hồ Chí Minh, 24 tuổi.
+                  </p>
                   <p>AI Content Creator.</p>
                 </div>
                 <div class="container">
-                  <p>
+                  <p data-i18n="home_profile_edu">
                     Tốt nghiệp chuyên ngành Hệ thống thông tin quản lý tại
                     trường Đại học Ngân hàng Tp. Hồ Chí Minh.
                   </p>
                   <p>GPA: 3.31/4</p>
                 </div>
                 <div class="container" style="padding-top: 5px">
-                  <p>
+                  <p data-i18n="home_profile_desc">
                     Thực hiện nhiều video ngắn dành cho khán giả nhỏ tuổi, sử
                     dụng các công cụ AI sáng tạo như Hailuo, Kling, Whisk để
                     mang đến hình ảnh sinh động và gần gũi. Các dự án nổi bật
@@ -207,16 +224,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-
-    <script>
-      const hamburger = document.querySelector(".hamburger");
-      const sidebar = document.querySelector(".sidebar");
-
-      hamburger.addEventListener("click", function () {
-        this.classList.toggle("is-active"); // animation nút
-        sidebar.classList.toggle("active"); // hiện/ẩn menu
-      });
-    </script>
+    <script src="main.js"></script>
 
     <script>
       // Kích hoạt plugin
@@ -239,7 +247,7 @@
             opacity: 0,
             duration: 0.5,
           },
-          "-=0.5"
+          "-=0.5",
         ) // chạy chồng 1 phần với video
 
         // 3. Rồi đến vị trí
@@ -250,7 +258,7 @@
             opacity: 0,
             duration: 0.5,
           },
-          "-=0.4"
+          "-=0.4",
         )
 
         // 4. Cuối cùng là menu

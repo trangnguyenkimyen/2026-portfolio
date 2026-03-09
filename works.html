@@ -1,15 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TrangNguyenKimYen | Works</title>
-    <!-- HAMBURGER -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"
     />
-    <!-- FANCY APPS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
@@ -29,14 +27,18 @@
     <link rel="stylesheet" href="works.css" />
   </head>
   <body>
-    <!-- Nút hamburger -->
+    <div class="lang-toggle">
+      <span class="lang-btn active" data-lang="vi">VI</span>
+      <span>|</span>
+      <span class="lang-btn" data-lang="en">EN</span>
+    </div>
+
     <button class="hamburger hamburger--spin" type="button">
       <span class="hamburger-box">
         <span class="hamburger-inner"></span>
       </span>
     </button>
 
-    <!-- Sidebar menu -->
     <nav class="sidebar">
       <ul>
         <li><a href="./index.html">Home</a></li>
@@ -51,6 +53,11 @@
             (+84) 85 293 3920
           </p>
         </li>
+        <li class="mobile-lang-toggle">
+          <span class="lang-btn active" data-lang="vi">VI</span>
+          <span>|</span>
+          <span class="lang-btn" data-lang="en">EN</span>
+        </li>
       </ul>
 
       <div class="sidebar-video">
@@ -62,7 +69,6 @@
       <div class="inner">
         <h1>WORKS</h1>
 
-        <!-- CAT -->
         <section class="project">
           <div class="main-project">
             <div class="project-img">
@@ -73,14 +79,23 @@
                   src="https://www.youtube.com/embed/BxY40JMqWVA?si=Railnin2KnkWw-x8"
                   title="YouTube video player"
                   frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                  "
                   allowfullscreen
                   loading="lazy"
                 >
                 </iframe>
               </div>
               <div class="text-editor">
-                <p>07/2025 | Thời lượng: 9 phút | Lượt xem: 429k</p>
+                <p data-i18n="home_project_meta">
+                  07/2025 | Thời lượng: 9 phút | Lượt xem: 429k
+                </p>
               </div>
             </div>
             <div class="project-details">
@@ -151,7 +166,7 @@
                     target="_blank"
                     href="https://youtu.be/BxY40JMqWVA?si=Railnin2KnkWw-x8"
                   >
-                    <span>Link Youtube</span>
+                    <span data-i18n="works_link_youtube">Link YouTube</span>
                     <i class="bx bx-play-circle"></i>
                   </a>
                 </div>
@@ -160,7 +175,6 @@
           </div>
         </section>
 
-        <!-- DOG -->
         <section class="project">
           <div class="main-project">
             <div class="project-img">
@@ -171,14 +185,23 @@
                   src="https://www.youtube.com/embed/L0uehIIs-Sg?si=6k7Z7M2aIOQeFa42"
                   title="YouTube video player"
                   frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                  "
                   allowfullscreen
                   loading="lazy"
                 >
                 </iframe>
               </div>
               <div class="text-editor">
-                <p>08/2025 | Thời lượng: 8 phút | Lượt xem: 31k</p>
+                <p data-i18n="works_dog_meta">
+                  08/2025 | Thời lượng: 8 phút | Lượt xem: 31k
+                </p>
               </div>
             </div>
             <div class="project-details">
@@ -249,7 +272,7 @@
                     target="_blank"
                     href="https://youtu.be/L0uehIIs-Sg?si=TiN_t2mi54Remc1-"
                   >
-                    <span>Link Youtube</span>
+                    <span data-i18n="works_link_youtube">Link YouTube</span>
                     <i class="bx bx-play-circle"></i>
                   </a>
                 </div>
@@ -258,106 +281,7 @@
           </div>
         </section>
 
-        <!-- RABBIT -->
-        <!-- <section class="project">
-          <div class="main-project">
-            <div class="project-img">
-              <div class="img-container">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/kLrzytiT3FI?si=eHaYWw9FvsZsmHJL"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                  loading="lazy"
-                >
-                </iframe>
-              </div>
-              <div class="text-editor">
-                <p>06/2025 | Thời lượng: 3 phút | Lượt xem: 44k</p>
-              </div>
-            </div>
-            <div class="project-details">
-              <div class="main-title">
-                <h3>[Thỏ Xám Trồng Rau Cải Xanh]</h3>
-              </div>
-
-              <div class="gallery">
-                <div class="img-box">
-                  <a
-                    href="img/tho1.jpg"
-                    data-fancybox="rabbitGallery"
-                    data-title="Ảnh 1"
-                  >
-                    <img src="img/tho1.jpg" alt="ảnh 1" />
-                  </a>
-                </div>
-                <div class="img-box">
-                  <a
-                    href="img/tho2.jpg"
-                    data-fancybox="rabbitGallery"
-                    data-title="Ảnh 2"
-                  >
-                    <img src="img/tho2.jpg" alt="ảnh 2" />
-                  </a>
-                </div>
-                <div class="img-box">
-                  <a
-                    href="img/tho3.jpg"
-                    data-fancybox="rabbitGallery"
-                    data-title="Ảnh 3"
-                  >
-                    <img src="img/tho3.jpg" alt="ảnh 3" />
-                  </a>
-                </div>
-                <div class="img-box">
-                  <a
-                    href="img/tho4.jpg"
-                    data-fancybox="rabbitGallery"
-                    data-title="Ảnh 4"
-                  >
-                    <img src="img/tho4.jpg" alt="ảnh 4" />
-                  </a>
-                </div>
-                <div class="img-box">
-                  <a
-                    href="img/tho5.jpg"
-                    data-fancybox="rabbitGallery"
-                    data-title="Ảnh 5"
-                  >
-                    <img src="img/tho5.jpg" alt="ảnh 5" />
-                  </a>
-                </div>
-                <div class="img-box">
-                  <a
-                    href="img/tho6.jpg"
-                    data-fancybox="rabbitGallery"
-                    data-title="Ảnh 6"
-                  >
-                    <img src="img/tho6.jpg" alt="ảnh 6" />
-                  </a>
-                </div>
-              </div>
-
-              <div class="buttons">
-                <div class="link-youtube">
-                  <a
-                    target="_blank"
-                    href="https://youtu.be/kLrzytiT3FI?si=eHaYWw9FvsZsmHJL"
-                  >
-                    <span>Link Youtube</span>
-                    <i class="bx bx-play-circle"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> -->
-
         <h2>Personal Projects</h2>
-        <!-- SIX -->
         <section class="project six-style">
           <div class="main-project">
             <div class="project-img">
@@ -368,13 +292,20 @@
                   src="https://www.youtube.com/embed/mNMNMSxfvNo"
                   title="YouTube video player"
                   frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                  "
                   allowfullscreen
                   loading="lazy"
                 ></iframe>
               </div>
               <div class="text-editor">
-                <p>
+                <p data-i18n="works_six_meta">
                   11/2025 | Thời lượng: 1 phút 19 giây | Phong cách: Realistic
                 </p>
               </div>
@@ -385,19 +316,20 @@
                 <h3>[Six]</h3>
               </div>
 
-              <!-- Thay vì gallery, dùng mô tả và bullet -->
               <div class="description">
-                <p>
+                <p data-i18n="works_six_desc">
                   Video ngắn phong cách realistic, kể câu chuyện gia đình qua
                   góc nhìn con trai, nói về tình mẫu tử và những khoảnh khắc
                   cuối cùng bên người thân.
                 </p>
                 <ul>
-                  <li>
+                  <li data-i18n="works_six_tool1">
                     Hình ảnh và video: Whisk, Google AI Studio, Grok, Veo3
                   </li>
-                  <li>Giọng đọc nhân vật: ElevenLabs</li>
-                  <li>Edit: CapCut Pro</li>
+                  <li data-i18n="works_six_tool2">
+                    Giọng đọc nhân vật: ElevenLabs
+                  </li>
+                  <li data-i18n="works_tool_edit">Edit: CapCut Pro</li>
                 </ul>
               </div>
 
@@ -407,7 +339,7 @@
                     target="_blank"
                     href="https://youtu.be/mNMNMSxfvNo?si=6X-57pAZgpFZvwfS"
                   >
-                    <span>Link YouTube</span>
+                    <span data-i18n="works_link_youtube">Link YouTube</span>
                     <i class="bx bx-play-circle"></i>
                   </a>
                 </div>
@@ -416,7 +348,6 @@
           </div>
         </section>
 
-        <!-- YEARNING - ANIME -->
         <section class="project six-style">
           <div class="main-project">
             <div class="project-img">
@@ -427,13 +358,22 @@
                   src="https://www.youtube.com/embed/rbzZjT0Vg98"
                   title="YouTube video player"
                   frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                  "
                   allowfullscreen
                   loading="lazy"
                 ></iframe>
               </div>
               <div class="text-editor">
-                <p>10/2025 | Thời lượng: 26 giây | Phong cách: Anime</p>
+                <p data-i18n="works_yearning_meta">
+                  10/2025 | Thời lượng: 26 giây | Phong cách: Anime
+                </p>
               </div>
             </div>
 
@@ -442,16 +382,17 @@
                 <h3>[Yearning]</h3>
               </div>
 
-              <!-- Thay vì gallery, dùng mô tả và bullet -->
               <div class="description">
-                <p>
+                <p data-i18n="works_yearning_desc">
                   Video anime ngắn được dựng dựa trên nhịp điệu của bài hát.
                   Không theo cốt truyện cụ thể, mà tập trung vào cảm xúc, màu
                   sắc và nhịp điệu chuyển động.
                 </p>
                 <ul>
-                  <li>Hình ảnh và video: MetaAI, Veo3</li>
-                  <li>Edit: CapCut Pro</li>
+                  <li data-i18n="works_yearning_tool1">
+                    Hình ảnh và video: MetaAI, Veo3
+                  </li>
+                  <li data-i18n="works_tool_edit">Edit: CapCut Pro</li>
                 </ul>
               </div>
 
@@ -461,7 +402,7 @@
                     target="_blank"
                     href="https://youtu.be/rbzZjT0Vg98?si=9YFvIaEYM3OKXfe9"
                   >
-                    <span>Link YouTube</span>
+                    <span data-i18n="works_link_youtube">Link YouTube</span>
                     <i class="bx bx-play-circle"></i>
                   </a>
                 </div>
@@ -472,19 +413,9 @@
       </div>
     </div>
 
-    <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-
-    <script>
-      const hamburger = document.querySelector(".hamburger");
-      const sidebar = document.querySelector(".sidebar");
-
-      hamburger.addEventListener("click", function () {
-        this.classList.toggle("is-active"); // animation nút
-        sidebar.classList.toggle("active"); // hiện/ẩn menu
-      });
-    </script>
+    <script src="main.js"></script>
 
     <script>
       gsap.registerPlugin(ScrollTrigger);

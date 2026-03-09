@@ -644,3 +644,59 @@ body {
     padding: 20px 10px;
   }
 }
+
+/* Language Toggle Button */
+.lang-toggle {
+  position: fixed;
+  top: 32px;
+  right: 100px; /* Đặt cạnh nút hamburger */
+  z-index: 2000;
+  display: flex;
+  gap: 10px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.lang-btn {
+  cursor: pointer;
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+}
+
+.lang-btn:hover {
+  opacity: 0.8;
+}
+
+.lang-btn.active {
+  opacity: 1;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* =========================================
+   MOBILE LANGUAGE TOGGLE (TRONG MENU)
+   ========================================= */
+.mobile-lang-toggle {
+  display: none; /* Mặc định ẩn trên Desktop */
+}
+
+/* Giao diện cảm ứng (Tablet & Mobile) */
+@media (max-width: 1024px) {
+  /* 1. Ẩn nút ngôn ngữ cố định ở góc phải màn hình */
+  body > .lang-toggle {
+    display: none !important;
+  }
+
+  /* 2. Hiện nút ngôn ngữ bên trong Menu */
+  .mobile-lang-toggle {
+    display: flex;
+    justify-content: center; /* Canh giữa giống các link menu khác */
+    gap: 15px;
+    margin-top: 40px; /* Cách các link menu ở trên ra một chút */
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #242424;
+  }
+}

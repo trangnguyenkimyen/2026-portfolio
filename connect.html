@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -29,6 +29,12 @@
     <link rel="stylesheet" href="connect.css" />
   </head>
   <body>
+    <div class="lang-toggle">
+      <span class="lang-btn active" data-lang="vi">VI</span>
+      <span>|</span>
+      <span class="lang-btn" data-lang="en">EN</span>
+    </div>
+
     <!-- Nút hamburger -->
     <button class="hamburger hamburger--spin" type="button">
       <span class="hamburger-box">
@@ -51,6 +57,11 @@
             (+84) 85 293 3920
           </p>
         </li>
+        <li class="mobile-lang-toggle">
+          <span class="lang-btn active" data-lang="vi">VI</span>
+          <span>|</span>
+          <span class="lang-btn" data-lang="en">EN</span>
+        </li>
       </ul>
 
       <div class="sidebar-video">
@@ -64,24 +75,16 @@
 
         <div class="contact-info">
           <div class="container">
-            <p>
+            <p data-i18n="connect_info">
               Mail: trangnguyenkimyen@gmail.com
               <br />
-              Phone: (+84) 85 293 3920
+              SĐT: (+84) 85 293 3920
             </p>
           </div>
         </div>
       </div>
     </div>
 
-    <script>
-      const hamburger = document.querySelector(".hamburger");
-      const sidebar = document.querySelector(".sidebar");
-
-      hamburger.addEventListener("click", function () {
-        this.classList.toggle("is-active"); // animation nút
-        sidebar.classList.toggle("active"); // hiện/ẩn menu
-      });
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
